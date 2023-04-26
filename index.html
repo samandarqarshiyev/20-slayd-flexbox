@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: aqua;
+            min-width: 480px;
+            box-shadow: 0px 0px 10px 10px #ff0000;
+            padding: 10px 20px;
+            z-index: 1;
+        }
+        .dropdown:hover  .dropdown-content{
+            display: block;
+        }
+
+
+        /* __________________________________________________________________________________________________________________________ */
+
+
+        .flex-container{
+            display: flex;
+            background-color: blue;
+        }
+        .flex-container>div{
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            font-size: 48px;            
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span>Katalog:</span>             <br><br>
+        <div class="dropdown-content">
+            <p>Monday Monday Monday Monday Monday Monday Monday </p>
+            <p>Monday Monday Monday Monday Monday Monday Monday  </p>
+        </div>
+    </div>
+ <br><br><br><br><br><br><br><br><br>  <!--  __________________________________________________________________________________________________________________________ -->
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>
